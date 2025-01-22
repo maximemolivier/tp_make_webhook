@@ -19,3 +19,25 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+@keyframes rotate-minute {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes rotate-hour {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.clock-hand-minute {
+  animation: rotate-minute 6s linear infinite;
+}
+
+.clock-hand-hour {
+  animation: rotate-hour 72s linear infinite;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
